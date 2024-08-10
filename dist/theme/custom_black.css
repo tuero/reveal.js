@@ -14,7 +14,7 @@
  :root {
    --r-background-color: #191919;
    --r-main-font: Source Sans Pro, Helvetica, sans-serif;
-   --r-main-font-size: 36px;
+   --r-main-font-size: 30px;
    --r-main-color: #fff;
    --r-block-margin: 20px;
    --r-heading-margin: 0 0 20px 0;
@@ -159,6 +159,10 @@
    display: block;
    text-align: left;
    margin: 0 0 0 1em;
+ }
+
+ .reveal li {
+   margin: 10px 0;
  }
  
  .reveal ol {
@@ -365,3 +369,58 @@
      background-color: var(--r-background-color);
    }
  }
+
+
+.danger {
+    margin-bottom: 15px;
+    padding: 1px 12px;
+    background-color: #ffdddd;
+    border-left: 6px solid #f44336;
+}
+
+.success {
+    margin-bottom: 15px;
+    padding: 1px 12px;
+    background-color: #ddffdd;
+    border-left: 6px solid #04AA6D;
+}
+
+.info {
+    margin-bottom: 15px;
+    padding: 0px 12px;
+    background-color: rgb(5, 29, 51);
+    border-left: 6px solid #2196F3;
+}
+    
+.warning {
+    margin-bottom: 15px;
+    padding: 1px 12px;
+    background-color: #ffffcc;
+    border-left: 6px solid #ffeb3b;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.multiCol {
+    display: table;
+    table-layout: fixed; 
+    width: 100%;
+    text-align: left;
+    .col {
+        display: table-cell;
+        vertical-align: top;
+        width: 50%;
+        padding: 2% 0 2% 3%; 
+        &:first-of-type { padding-left: 0; }
+    }
+}
