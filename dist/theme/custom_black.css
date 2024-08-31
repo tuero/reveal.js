@@ -162,7 +162,7 @@
  }
 
  .reveal li {
-   margin: 10px 0;
+   margin: 5px 0;
  }
  
  .reveal ol {
@@ -374,7 +374,7 @@
 .danger {
     margin-bottom: 15px;
     padding: 1px 12px;
-    background-color: #ffdddd;
+    background-color: #f80d0d6e;
     border-left: 6px solid #f44336;
 }
 
